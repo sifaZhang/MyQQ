@@ -11,8 +11,8 @@ namespace MyQQ
 {
     internal class DataOperator
     {
-        private static string connectString = @"Server=tcp:sifa-dababase.database.windows.net,1433;Initial Catalog=db_MyQQ;Persist Security Info=False;User ID=sifa;Password=Zy31958058;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-        
+        private static string connectString = @"Data Source=dell\MSSQLSERVER2;Database=db_MyQQ;User ID=sa;Pwd=123";
+
         public static SqlConnection connection = new SqlConnection(connectString);
 
         public int ExecSQL(string sql)
